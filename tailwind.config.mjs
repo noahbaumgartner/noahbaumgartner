@@ -5,6 +5,7 @@ export default {
 		colors: {
 			black: '#000',
 			white: '#fff',
+			green: '#283618',
 			nb: {
 				beige: '#F9F7F1',
 			}
