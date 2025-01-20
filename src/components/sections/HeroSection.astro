@@ -3,17 +3,32 @@ import FadeIn from "../motion/FadeIn";
 ---
 
 <section
-  class="pt-40 flex flex-col justify-center max-w-[900px] mx-auto px-8 md:px-16"
+  class="pt-32 flex flex-col justify-center max-w-[950px] mx-auto px-8 md:px-16"
 >
-  <div class="flex flex-row justify-between space-x-4">
+  <div class="flex flex-col md:flex-row justify-between space-x-20">
     <div class="flex flex-col justify-center">
       <FadeIn client:load>
-        <h1 class="text-4xl font-bold font-poppins">Hopp, I bi da Noah.</h1>
-        <h2 class="text-2xl mt-4 font-poppins">
-          Und i entwickla Software, wie ...
+        <h1 class="text-3xl font-bold font-poppins">Hopp, I bi da Noah.</h1>
+        <h2 class="text-2xl mt-8 font-poppins">
+          Und i entwickle Software bi buildagil und AppBase. Zudem hani oh no
+          privati Projekt am laufa.
         </h2>
       </FadeIn>
     </div>
-    <div class="size-60 bg-black rounded-xl"></div>
+    <div class="size-60 min-w-60 relative group">
+      <div
+        class="bg-black rounded-xl size-52 absolute bottom-0 right-0 group-hover:translate-x-2 group-hover:translate-y-2 duration-200"
+      >
+      </div>
+      <div
+        class="bg-white rounded-xl size-52 absolute top-0 left-0 group-hover:-translate-x-2 group-hover:-translate-y-2 duration-200 overflow-hidden"
+      >
+        <img
+          src="https://media.licdn.com/dms/image/v2/D4E03AQEzlR2sWweJ3w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1693304718563?e=2147483647&v=beta&t=Tii5x4n6rrnK4aiYKkpjxpB1McmK8r9wSDzjf9Rcy_s"
+          alt="Noah Baumgartner"
+          class="w-full h-full"
+        />
+      </div>
+    </div>
   </div>
 </section>

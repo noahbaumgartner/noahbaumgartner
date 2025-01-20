@@ -4,6 +4,7 @@ export default {
 	theme: {
 		colors: {
 			black: '#000',
+			white: '#fff',
 			nb: {
 				beige: '#F9F7F1',
 			}
