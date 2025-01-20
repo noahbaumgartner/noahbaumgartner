@@ -2,7 +2,17 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		colors: {
+			black: '#000',
+			nb: {
+				beige: '#F9F7F1',
+			}
+		},
+		extend: {
+			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+			}
+		},
 	},
 	plugins: [],
 }
