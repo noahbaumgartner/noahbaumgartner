@@ -1,39 +1,46 @@
 ---
 import FadeIn from "../motion/FadeIn";
 import TitleLink from "../TitleLink";
-import { SquareTerminal } from "lucide-react";
 ---
 
 <section
-  class="pt-20 md:pt-32 pb-32 md:pb-56 flex flex-col justify-center max-w-[950px] mx-auto px-8 md:px-16"
+  class="relative pt-36 md:pt-60 pb-32 md:pb-56 flex flex-col justify-center bg-[radial-gradient(circle,#73737350_1px,transparent_1px)]
+bg-[size:10px_10px]
+md:[mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_80%,transparent_100%)]"
 >
-  <div
-    class="flex flex-col md:flex-row justify-between space-y-28 md:space-x-20 md:space-y-0"
-  >
-    <div class="flex flex-col justify-center">
-      <FadeIn client:load>
-        <h1 class="text-3xl font-bold font-poppins">Hopp, I be da Noah.</h1>
-        <h2 class="text-2xl mt-5 font-poppins leading-10">
-          Und i entwickla Software bi <TitleLink
-            color="#1A4343"
-            href="https://buildagil.com">buildagil</TitleLink
-          >. Zudem schaffi oh a private <TitleLink
-            color="#bc6c25"
-            href="#projects">Projekt</TitleLink
-          >.
-        </h2>
-      </FadeIn>
-    </div>
-    <div class="size-auto flex justify-center">
-      <div class="size-56 min-w-56 min-h-56 relative group">
-        <div
-          class="bg-black rounded-2xl size-52 absolute bottom-0 right-0 group-hover:translate-x-2 group-hover:translate-y-2 duration-200 opacity-50"
-        >
-        </div>
-        <div
-          class="bg-black rounded-2xl size-52 absolute top-0 left-0 group-hover:-translate-x-2 group-hover:-translate-y-2 duration-200 overflow-hidden flex items-center justify-center"
-        >
-          <SquareTerminal className="text-white size-20" />
+  <div class="max-w-[950px] mx-auto px-8 md:px-16">
+    <div
+      class="flex flex-col md:flex-row justify-between space-y-28 md:space-x-20 md:space-y-0"
+    >
+      <div class="flex flex-col justify-center">
+        <FadeIn client:load>
+          <h1 class="text-3xl font-bold font-poppins">Hopp, I be da Noah.</h1>
+          <h2 class="text-2xl mt-5 font-poppins leading-10">
+            Und i entwickla Software bi <TitleLink
+              color="#1A4343"
+              href="https://buildagil.com">buildagil</TitleLink
+            >. Zudem schaffi oh a private <TitleLink
+              color="#bc6c25"
+              href="#projects">Projekt</TitleLink
+            >.
+          </h2>
+        </FadeIn>
+      </div>
+      <div class="size-auto flex justify-center">
+        <div class="size-56 min-w-56 min-h-56 relative group">
+          <div
+            class="bg-black rounded-2xl size-52 absolute bottom-0 right-0 group-hover:translate-x-2 group-hover:translate-y-2 duration-200 opacity-50"
+          >
+          </div>
+          <div
+            class="bg-black rounded-2xl size-52 absolute top-0 left-0 group-hover:-translate-x-2 group-hover:-translate-y-2 duration-200 overflow-hidden flex items-center justify-center border-2"
+          >
+            <img
+              src="/public/hero.jpg"
+              alt="Noah Baumgartner"
+              class="size-full"
+            />
+          </div>
         </div>
       </div>
     </div>
