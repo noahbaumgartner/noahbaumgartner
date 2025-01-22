@@ -4,22 +4,34 @@ import FadeIn from "../motion/FadeIn";
 
 <section class="relative bg-black text-white h-auto py-32">
   <div class="max-w-[950px] mx-auto px-8 md:px-16 flex flex-row space-x-20">
-    <div class="flex-grow-0 flex-shrink-0">
-      <img src="/public/about-me.jpg" alt="About me" class="h-96" />
+    <div class="flex-grow-0 flex-shrink-0 flex flex-col justify-center">
+      <img
+        src="/public/about-me.jpg"
+        alt="About me"
+        class="h-96 rounded-2xl border-2 border-beige border-opacity-50"
+      />
     </div>
-    <div class="flex-grow">
+    <div class="flex-grow flex flex-col justify-center">
       <FadeIn client:visible>
-        <h1 class="text-3xl font-bold font-poppins flex-grow mb-4">Über mi.</h1>
+        <h1 class="text-2xl font-bold font-poppins flex-grow mb-4">Über mi.</h1>
+        <p class="text-md font-poppins mb-4">
+          Mein Name ist Noah Baumgartner, ich bin 23 Jahre alt und komme aus dem
+          St. Galler Rheintal.
+        </p>
+        <p class="text-md font-poppins mb-4">
+          Im Jahr 2020 habe ich meine Ausbildung zum Applikationsentwickler EFZ
+          erfolgreich abgeschlossen. Im Jahr 2021 begann ich das Bachelorstudium
+          in Computer Science, um meine Kenntnisse weiter zu vertiefen. Seit
+          2023 bin ich Teil des Teams der B3 Digital AG, wo ich mit Leidenschaft
+          an innovativen Lösungen arbeite.
+        </p>
         <p class="text-md font-poppins">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet.
+          <b>Hobbies</b>
+          <ul class="">
+            <li>Leichtathletik STV Kriessern</li>
+            <li>Freiwillige Feuerwehr</li>
+            <li>Kriessner Schollabar</li>
+          </ul>
         </p>
       </FadeIn>
     </div>
