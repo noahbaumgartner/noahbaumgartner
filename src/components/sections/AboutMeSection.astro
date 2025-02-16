@@ -1,39 +1,41 @@
 ---
 import FadeIn from "../motion/FadeIn";
+import Title2 from "../Title2.astro";
 ---
 
 <section class="relative bg-black text-white h-auto py-32">
-  <div class="max-w-[950px] mx-auto px-8 md:px-16 flex flex-row space-x-20">
-    <div class="flex-grow-0 flex-shrink-0 flex flex-col justify-center">
-      <img
-        src="/public/about-me.jpg"
-        alt="About me"
-        class="h-96 rounded-2xl border-2 border-beige border-opacity-50"
-      />
+    <div class="max-w-[950px] mx-auto px-8 md:px-16 flex flex-row space-x-20">
+        <div class="flex-grow-0 flex-shrink-0 flex flex-col justify-center">
+            <img
+                src="/public/about-me.jpg"
+                alt="About me"
+                class="h-96 rounded-2xl border-2 border-beige border-opacity-50"
+            />
+        </div>
+        <div class="flex-grow flex flex-col justify-center">
+            <FadeIn client:visible>
+                <Title2>Über mi</Title2>
+                <p class="text-md font-poppins mb-4">
+                    Mein Name ist Noah Baumgartner, ich bin 23 Jahre alt und
+                    komme aus dem St. Galler Rheintal.
+                </p>
+                <p class="text-md font-poppins mb-4">
+                    Im Jahr 2020 habe ich meine Ausbildung zum
+                    Applikationsentwickler EFZ erfolgreich abgeschlossen. Im
+                    Jahr 2021 begann ich das Bachelorstudium in Computer
+                    Science, um meine Kenntnisse weiter zu vertiefen. Seit 2023
+                    bin ich Teil des Teams der B3 Digital AG, wo ich mit
+                    Leidenschaft an innovativen Lösungen arbeite.
+                </p>
+                <p class="text-md font-poppins">
+                    <b>Hobbies</b>
+                    <ul class="">
+                        <li>Leichtathletik STV Kriessern</li>
+                        <li>Freiwillige Feuerwehr</li>
+                        <li>Kriessner Schollabar</li>
+                    </ul>
+                </p>
+            </FadeIn>
+        </div>
     </div>
-    <div class="flex-grow flex flex-col justify-center">
-      <FadeIn client:visible>
-        <h1 class="text-2xl font-bold font-poppins flex-grow mb-4">Über mi.</h1>
-        <p class="text-md font-poppins mb-4">
-          Mein Name ist Noah Baumgartner, ich bin 23 Jahre alt und komme aus dem
-          St. Galler Rheintal.
-        </p>
-        <p class="text-md font-poppins mb-4">
-          Im Jahr 2020 habe ich meine Ausbildung zum Applikationsentwickler EFZ
-          erfolgreich abgeschlossen. Im Jahr 2021 begann ich das Bachelorstudium
-          in Computer Science, um meine Kenntnisse weiter zu vertiefen. Seit
-          2023 bin ich Teil des Teams der B3 Digital AG, wo ich mit Leidenschaft
-          an innovativen Lösungen arbeite.
-        </p>
-        <p class="text-md font-poppins">
-          <b>Hobbies</b>
-          <ul class="">
-            <li>Leichtathletik STV Kriessern</li>
-            <li>Freiwillige Feuerwehr</li>
-            <li>Kriessner Schollabar</li>
-          </ul>
-        </p>
-      </FadeIn>
-    </div>
-  </div>
 </section>
